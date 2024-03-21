@@ -22,7 +22,7 @@ export default async function transferCoin(address: string): Promise<TransferCoi
   } catch (error) {
     console.log(error); 
     return {
-      
+          console.log('wallet', wallet);
       success: false,
       message: "Unable to Send Transaction",
     };
